@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Minimal - Bootstrap Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="titlelogo.png" rel="icon">
+  <link href="img/titlelogo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700|EB+Garamond" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+  <!-- Menu -->
+  <nav class="menu" id="theMenu">
+    <div class="menu-wrap">
+      <h1 class="logo"><a href="index.html#home">3D New york</a></h1>
+      <i class="fa fa-times-circle menu-close"></i>
+      <a href="index.html">Home</a>
+      <a href="About_us.html">About us</a>
+      <a href="lineup.html">DJ line up</a>
+      <a href="contact.html">contact</a>
+
+        
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-dribbble"></i></a>
+      <a href="#"><i class="fa fa-envelope"></i></a>
+    </div>
+
+    <!-- Menu button -->
+    <div id="menuToggle"><i class="fa fa-bars"></i></div>
+  </nav>
+
+  <!-- ========== video section ========== -->
+<div id="H" name="home">
+    <div class="container">
+      <div class="logo">
+        <img src="img/intro_logo.png">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+        </div>
+      </div>
+    </div><!-- /container -->
+      <div class="embed-responsive embed-responsive-16by9">
+<iframe width="956" height="538" src="https://www.youtube.com/embed/dvBomvyCI9g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+    
+<!--gap-->    
+<div id="gap">   </div>
+<!--gap-->
+    
+   <!---------About us------------>       
+    <section id="about" name="about"></section>
+  <div id="U">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+        <h3>About us</h3>
+            <img src="img/LOGO.png" style="width:100%">
+          </div>  
+        <!-- INTRO INFORMATIO-->
+        <div class="col-lg-6">
+            <a href="https://goo.gl/maps/Gv2tPAA3Utz">
+            <img src="img/map.jpg" style="width:100%">
+            </a>
+            <br>
+            <br>
+          <p>A multi-day music event that started in Miami, FL and is now the largest EDM festival in the world. Featuring high-energy performances from some of the biggest names in EDM, Rolling Loud brings premier music festival experiences to multiple cities </p>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /f -->
+
+<!--gap-->    
+<div id="gap">   </div>
+<!--gap-->
+    
+  <!-- ========== Gallery SECTION ========== -->
+  <div id="U">
+    <div class="container">
+      <div class="row">
+        <h3>Gallery</h3>
+        <div class="row"> 
+  <div class="column">
+    <img src="img/scene1.jpg" style="width:100%">
+    <img src="img/scene2.jpg" style="width:100%">
+    <img src="img/scene3.jpg" style="width:100%">
+    <img src="img/scene4.jpg" style="width:100%">
+    <img src="img/scene5.jpg" style="width:100%">
+    <img src="img/scene6.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/scene7.jpg" style="width:100%">
+    <img src="img/scene8.jpg" style="width:100%">
+    <img src="img/scene9.jpg" style="width:100%">
+    <img src="img/scene10.jpg" style="width:100%">
+    <img src="img/scene11.jpg" style="width:100%">
+    <img src="img/scene12.jpg" style="width:100%">
+  </div>  
+    </div><!-- row -->
+    <!-- container -->
+  </div>
+  <!-- f -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+    
+// Two images side by side
+function two() {
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.msFlex = "50%";  // IE10
+        elements[i].style.flex = "50%";
+    }
+}
+
+</script>
+
+</body>
+</html>
